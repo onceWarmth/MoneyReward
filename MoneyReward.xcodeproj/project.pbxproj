@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BA14B821E76C86E0023F995 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14B811E76C86E0023F995 /* main.m */; };
+		2BA14B851E76C86E0023F995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14B841E76C86E0023F995 /* AppDelegate.m */; };
+		2BA14B8B1E76C86E0023F995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA14B891E76C86E0023F995 /* Main.storyboard */; };
+		2BA14B8D1E76C86E0023F995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA14B8C1E76C86E0023F995 /* Assets.xcassets */; };
+		2BA14B901E76C86E0023F995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA14B8E1E76C86E0023F995 /* LaunchScreen.storyboard */; };
+		2BA14B9B1E76C86E0023F995 /* MoneyRewardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14B9A1E76C86E0023F995 /* MoneyRewardTests.m */; };
+		2BA14BA61E76C86E0023F995 /* MoneyRewardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14BA51E76C86E0023F995 /* MoneyRewardUITests.m */; };
+		2BA14BBA1E76C89B0023F995 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BA14BB41E76C89B0023F995 /* mapapi.bundle */; };
+		2BA14BBB1E76C89B0023F995 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BB51E76C89B0023F995 /* BaiduMapAPI_Utils.framework */; };
+		2BA14BBC1E76C89B0023F995 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BB61E76C89B0023F995 /* BaiduMapAPI_Radar.framework */; };
+		2BA14BBD1E76C89B0023F995 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BB71E76C89B0023F995 /* BaiduMapAPI_Map.framework */; };
+		2BA14BBE1E76C89B0023F995 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BB81E76C89B0023F995 /* BaiduMapAPI_Location.framework */; };
+		2BA14BBF1E76C89B0023F995 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BB91E76C89B0023F995 /* BaiduMapAPI_Base.framework */; };
+		2BA14BC31E76C8BB0023F995 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BC11E76C8BB0023F995 /* libcrypto.a */; };
+		2BA14BC41E76C8BB0023F995 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BC21E76C8BB0023F995 /* libssl.a */; };
+		2BA14BC71E76C8D10023F995 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BC61E76C8D10023F995 /* CoreLocation.framework */; };
+		2BA14BC91E76C8DC0023F995 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BC81E76C8DC0023F995 /* QuartzCore.framework */; };
+		2BA14BCB1E76C8E60023F995 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BCA1E76C8E60023F995 /* OpenGLES.framework */; };
+		2BA14BCD1E76C8F00023F995 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BCC1E76C8F00023F995 /* SystemConfiguration.framework */; };
+		2BA14BCF1E76C8F80023F995 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BCE1E76C8F80023F995 /* CoreGraphics.framework */; };
+		2BA14BD11E76C8FF0023F995 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BD01E76C8FF0023F995 /* Security.framework */; };
+		2BA14BD31E76C9080023F995 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BD21E76C9080023F995 /* libsqlite3.0.tbd */; };
+		2BA14BD51E76C9130023F995 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BD41E76C9130023F995 /* CoreTelephony.framework */; };
+		2BA14BD71E76C91D0023F995 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA14BD61E76C91D0023F995 /* libstdc++.6.0.9.tbd */; };
+		2BA14BDD1E76C96E0023F995 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14BD91E76C96E0023F995 /* UserViewController.m */; };
+		2BA14BDE1E76C96E0023F995 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14BDC1E76C96E0023F995 /* AccountViewController.m */; };
+		2BA14BE01E76CA260023F995 /* Baidu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14BDF1E76CA260023F995 /* Baidu.mm */; };
+		2BA14BE31E76CBB10023F995 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA14BE21E76CBB10023F995 /* TaskDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BA14B971E76C86E0023F995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA14B751E76C86E0023F995 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BA14B7C1E76C86E0023F995;
+			remoteInfo = MoneyReward;
+		};
+		2BA14BA21E76C86E0023F995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA14B751E76C86E0023F995 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BA14B7C1E76C86E0023F995;
+			remoteInfo = MoneyReward;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BA14B7D1E76C86E0023F995 /* MoneyReward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyReward.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA14B811E76C86E0023F995 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BA14B831E76C86E0023F995 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BA14B841E76C86E0023F995 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BA14B8A1E76C86E0023F995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BA14B8C1E76C86E0023F995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BA14B8F1E76C86E0023F995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BA14B911E76C86E0023F995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA14B961E76C86E0023F995 /* MoneyRewardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyRewardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA14B9A1E76C86E0023F995 /* MoneyRewardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyRewardTests.m; sourceTree = "<group>"; };
+		2BA14B9C1E76C86E0023F995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA14BA11E76C86E0023F995 /* MoneyRewardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyRewardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA14BA51E76C86E0023F995 /* MoneyRewardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyRewardUITests.m; sourceTree = "<group>"; };
+		2BA14BA71E76C86E0023F995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA14BB41E76C89B0023F995 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		2BA14BB51E76C89B0023F995 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		2BA14BB61E76C89B0023F995 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		2BA14BB71E76C89B0023F995 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		2BA14BB81E76C89B0023F995 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		2BA14BB91E76C89B0023F995 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		2BA14BC11E76C8BB0023F995 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		2BA14BC21E76C8BB0023F995 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		2BA14BC61E76C8D10023F995 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2BA14BC81E76C8DC0023F995 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2BA14BCA1E76C8E60023F995 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2BA14BCC1E76C8F00023F995 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BA14BCE1E76C8F80023F995 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BA14BD01E76C8FF0023F995 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2BA14BD21E76C9080023F995 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2BA14BD41E76C9130023F995 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2BA14BD61E76C91D0023F995 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		2BA14BD81E76C96E0023F995 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		2BA14BD91E76C96E0023F995 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		2BA14BDA1E76C96E0023F995 /* MRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRKit.h; sourceTree = "<group>"; };
+		2BA14BDB1E76C96E0023F995 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		2BA14BDC1E76C96E0023F995 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		2BA14BDF1E76CA260023F995 /* Baidu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Baidu.mm; sourceTree = "<group>"; };
+		2BA14BE11E76CBB10023F995 /* TaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
+		2BA14BE21E76CBB10023F995 /* TaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BA14B7A1E76C86E0023F995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA14BD71E76C91D0023F995 /* libstdc++.6.0.9.tbd in Frameworks */,
+				2BA14BD51E76C9130023F995 /* CoreTelephony.framework in Frameworks */,
+				2BA14BD31E76C9080023F995 /* libsqlite3.0.tbd in Frameworks */,
+				2BA14BD11E76C8FF0023F995 /* Security.framework in Frameworks */,
+				2BA14BCF1E76C8F80023F995 /* CoreGraphics.framework in Frameworks */,
+				2BA14BCD1E76C8F00023F995 /* SystemConfiguration.framework in Frameworks */,
+				2BA14BCB1E76C8E60023F995 /* OpenGLES.framework in Frameworks */,
+				2BA14BC91E76C8DC0023F995 /* QuartzCore.framework in Frameworks */,
+				2BA14BC71E76C8D10023F995 /* CoreLocation.framework in Frameworks */,
+				2BA14BBF1E76C89B0023F995 /* BaiduMapAPI_Base.framework in Frameworks */,
+				2BA14BBB1E76C89B0023F995 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				2BA14BC41E76C8BB0023F995 /* libssl.a in Frameworks */,
+				2BA14BC31E76C8BB0023F995 /* libcrypto.a in Frameworks */,
+				2BA14BBC1E76C89B0023F995 /* BaiduMapAPI_Radar.framework in Frameworks */,
+				2BA14BBD1E76C89B0023F995 /* BaiduMapAPI_Map.framework in Frameworks */,
+				2BA14BBE1E76C89B0023F995 /* BaiduMapAPI_Location.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B931E76C86E0023F995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B9E1E76C86E0023F995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA14B741E76C86E0023F995 = {
+			isa = PBXGroup;
+			children = (
+				2BA14BB31E76C87D0023F995 /* frameworks */,
+				2BA14B7F1E76C86E0023F995 /* MoneyReward */,
+				2BA14B991E76C86E0023F995 /* MoneyRewardTests */,
+				2BA14BA41E76C86E0023F995 /* MoneyRewardUITests */,
+				2BA14B7E1E76C86E0023F995 /* Products */,
+				2BA14BC51E76C8D10023F995 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BA14B7E1E76C86E0023F995 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14B7D1E76C86E0023F995 /* MoneyReward.app */,
+				2BA14B961E76C86E0023F995 /* MoneyRewardTests.xctest */,
+				2BA14BA11E76C86E0023F995 /* MoneyRewardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA14B7F1E76C86E0023F995 /* MoneyReward */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14BD81E76C96E0023F995 /* UserViewController.h */,
+				2BA14BD91E76C96E0023F995 /* UserViewController.m */,
+				2BA14BDA1E76C96E0023F995 /* MRKit.h */,
+				2BA14BDB1E76C96E0023F995 /* AccountViewController.h */,
+				2BA14BDC1E76C96E0023F995 /* AccountViewController.m */,
+				2BA14B831E76C86E0023F995 /* AppDelegate.h */,
+				2BA14B841E76C86E0023F995 /* AppDelegate.m */,
+				2BA14B891E76C86E0023F995 /* Main.storyboard */,
+				2BA14B8C1E76C86E0023F995 /* Assets.xcassets */,
+				2BA14B8E1E76C86E0023F995 /* LaunchScreen.storyboard */,
+				2BA14B911E76C86E0023F995 /* Info.plist */,
+				2BA14B801E76C86E0023F995 /* Supporting Files */,
+				2BA14BDF1E76CA260023F995 /* Baidu.mm */,
+				2BA14BE11E76CBB10023F995 /* TaskDetailViewController.h */,
+				2BA14BE21E76CBB10023F995 /* TaskDetailViewController.m */,
+			);
+			path = MoneyReward;
+			sourceTree = "<group>";
+		};
+		2BA14B801E76C86E0023F995 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14B811E76C86E0023F995 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BA14B991E76C86E0023F995 /* MoneyRewardTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14B9A1E76C86E0023F995 /* MoneyRewardTests.m */,
+				2BA14B9C1E76C86E0023F995 /* Info.plist */,
+			);
+			path = MoneyRewardTests;
+			sourceTree = "<group>";
+		};
+		2BA14BA41E76C86E0023F995 /* MoneyRewardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14BA51E76C86E0023F995 /* MoneyRewardUITests.m */,
+				2BA14BA71E76C86E0023F995 /* Info.plist */,
+			);
+			path = MoneyRewardUITests;
+			sourceTree = "<group>";
+		};
+		2BA14BB31E76C87D0023F995 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14BC01E76C8BB0023F995 /* thirdlibs */,
+				2BA14BB41E76C89B0023F995 /* mapapi.bundle */,
+				2BA14BB51E76C89B0023F995 /* BaiduMapAPI_Utils.framework */,
+				2BA14BB61E76C89B0023F995 /* BaiduMapAPI_Radar.framework */,
+				2BA14BB71E76C89B0023F995 /* BaiduMapAPI_Map.framework */,
+				2BA14BB81E76C89B0023F995 /* BaiduMapAPI_Location.framework */,
+				2BA14BB91E76C89B0023F995 /* BaiduMapAPI_Base.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		2BA14BC01E76C8BB0023F995 /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14BC11E76C8BB0023F995 /* libcrypto.a */,
+				2BA14BC21E76C8BB0023F995 /* libssl.a */,
+			);
+			path = thirdlibs;
+			sourceTree = "<group>";
+		};
+		2BA14BC51E76C8D10023F995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA14BD61E76C91D0023F995 /* libstdc++.6.0.9.tbd */,
+				2BA14BD41E76C9130023F995 /* CoreTelephony.framework */,
+				2BA14BD21E76C9080023F995 /* libsqlite3.0.tbd */,
+				2BA14BD01E76C8FF0023F995 /* Security.framework */,
+				2BA14BCE1E76C8F80023F995 /* CoreGraphics.framework */,
+				2BA14BCC1E76C8F00023F995 /* SystemConfiguration.framework */,
+				2BA14BCA1E76C8E60023F995 /* OpenGLES.framework */,
+				2BA14BC81E76C8DC0023F995 /* QuartzCore.framework */,
+				2BA14BC61E76C8D10023F995 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BA14B7C1E76C86E0023F995 /* MoneyReward */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA14BAA1E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyReward" */;
+			buildPhases = (
+				2BA14B791E76C86E0023F995 /* Sources */,
+				2BA14B7A1E76C86E0023F995 /* Frameworks */,
+				2BA14B7B1E76C86E0023F995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyReward;
+			productName = MoneyReward;
+			productReference = 2BA14B7D1E76C86E0023F995 /* MoneyReward.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BA14B951E76C86E0023F995 /* MoneyRewardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA14BAD1E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyRewardTests" */;
+			buildPhases = (
+				2BA14B921E76C86E0023F995 /* Sources */,
+				2BA14B931E76C86E0023F995 /* Frameworks */,
+				2BA14B941E76C86E0023F995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA14B981E76C86E0023F995 /* PBXTargetDependency */,
+			);
+			name = MoneyRewardTests;
+			productName = MoneyRewardTests;
+			productReference = 2BA14B961E76C86E0023F995 /* MoneyRewardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BA14BA01E76C86E0023F995 /* MoneyRewardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA14BB01E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyRewardUITests" */;
+			buildPhases = (
+				2BA14B9D1E76C86E0023F995 /* Sources */,
+				2BA14B9E1E76C86E0023F995 /* Frameworks */,
+				2BA14B9F1E76C86E0023F995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA14BA31E76C86E0023F995 /* PBXTargetDependency */,
+			);
+			name = MoneyRewardUITests;
+			productName = MoneyRewardUITests;
+			productReference = 2BA14BA11E76C86E0023F995 /* MoneyRewardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BA14B751E76C86E0023F995 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wilab;
+				TargetAttributes = {
+					2BA14B7C1E76C86E0023F995 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XQHYX48492;
+						ProvisioningStyle = Automatic;
+					};
+					2BA14B951E76C86E0023F995 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XQHYX48492;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BA14B7C1E76C86E0023F995;
+					};
+					2BA14BA01E76C86E0023F995 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XQHYX48492;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2BA14B7C1E76C86E0023F995;
+					};
+				};
+			};
+			buildConfigurationList = 2BA14B781E76C86E0023F995 /* Build configuration list for PBXProject "MoneyReward" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BA14B741E76C86E0023F995;
+			productRefGroup = 2BA14B7E1E76C86E0023F995 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BA14B7C1E76C86E0023F995 /* MoneyReward */,
+				2BA14B951E76C86E0023F995 /* MoneyRewardTests */,
+				2BA14BA01E76C86E0023F995 /* MoneyRewardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BA14B7B1E76C86E0023F995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA14B901E76C86E0023F995 /* LaunchScreen.storyboard in Resources */,
+				2BA14BBA1E76C89B0023F995 /* mapapi.bundle in Resources */,
+				2BA14B8D1E76C86E0023F995 /* Assets.xcassets in Resources */,
+				2BA14B8B1E76C86E0023F995 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B941E76C86E0023F995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B9F1E76C86E0023F995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BA14B791E76C86E0023F995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA14BDD1E76C96E0023F995 /* UserViewController.m in Sources */,
+				2BA14B851E76C86E0023F995 /* AppDelegate.m in Sources */,
+				2BA14B821E76C86E0023F995 /* main.m in Sources */,
+				2BA14BE01E76CA260023F995 /* Baidu.mm in Sources */,
+				2BA14BE31E76CBB10023F995 /* TaskDetailViewController.m in Sources */,
+				2BA14BDE1E76C96E0023F995 /* AccountViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B921E76C86E0023F995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA14B9B1E76C86E0023F995 /* MoneyRewardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA14B9D1E76C86E0023F995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA14BA61E76C86E0023F995 /* MoneyRewardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BA14B981E76C86E0023F995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BA14B7C1E76C86E0023F995 /* MoneyReward */;
+			targetProxy = 2BA14B971E76C86E0023F995 /* PBXContainerItemProxy */;
+		};
+		2BA14BA31E76C86E0023F995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BA14B7C1E76C86E0023F995 /* MoneyReward */;
+			targetProxy = 2BA14BA21E76C86E0023F995 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BA14B891E76C86E0023F995 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA14B8A1E76C86E0023F995 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BA14B8E1E76C86E0023F995 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA14B8F1E76C86E0023F995 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BA14BA81E76C86E0023F995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BA14BA91E76C86E0023F995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BA14BAB1E76C86E0023F995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XQHYX48492;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MoneyReward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdlibs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyReward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BA14BAC1E76C86E0023F995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XQHYX48492;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MoneyReward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thirdlibs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyReward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BA14BAE1E76C86E0023F995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQHYX48492;
+				INFOPLIST_FILE = MoneyRewardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyRewardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyReward.app/MoneyReward";
+			};
+			name = Debug;
+		};
+		2BA14BAF1E76C86E0023F995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQHYX48492;
+				INFOPLIST_FILE = MoneyRewardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyRewardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyReward.app/MoneyReward";
+			};
+			name = Release;
+		};
+		2BA14BB11E76C86E0023F995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XQHYX48492;
+				INFOPLIST_FILE = MoneyRewardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyRewardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoneyReward;
+			};
+			name = Debug;
+		};
+		2BA14BB21E76C86E0023F995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XQHYX48492;
+				INFOPLIST_FILE = MoneyRewardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onceWarmth.MoneyRewardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoneyReward;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BA14B781E76C86E0023F995 /* Build configuration list for PBXProject "MoneyReward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA14BA81E76C86E0023F995 /* Debug */,
+				2BA14BA91E76C86E0023F995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA14BAA1E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyReward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA14BAB1E76C86E0023F995 /* Debug */,
+				2BA14BAC1E76C86E0023F995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BA14BAD1E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyRewardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA14BAE1E76C86E0023F995 /* Debug */,
+				2BA14BAF1E76C86E0023F995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BA14BB01E76C86E0023F995 /* Build configuration list for PBXNativeTarget "MoneyRewardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA14BB11E76C86E0023F995 /* Debug */,
+				2BA14BB21E76C86E0023F995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BA14B751E76C86E0023F995 /* Project object */;
+}
